@@ -1,0 +1,46 @@
+       <div style="background-color:#C9C0BB; padding:10%;">
+	   <h2 align="center" style="padding-bottom:50px;">Payment Details</h2>
+	   <form align="center">
+	   <label for="name"><b>Cardholder Name:</label></b>
+        <input type="text" id="name" placeholder="Enter cardholder name"><br><br>
+
+        <label for="cardNumber"><b>Card Number:</label></b>
+        <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" maxlength="16"><br><br>
+
+        <label for="expiry"><b>Expiry Date (MM/YY):</label></b>
+        <input type="text" id="expiry" placeholder="MM/YY" maxlength="5"><br><br>
+
+        <label for="cvv"><b>CVV:</label></b>
+        <input type="text" id="cvv" placeholder="123" maxlength="3"><br><br>
+		<button type="submit" value="" style="background-color:#7F525D;">submit</button>
+
+		</form>
+		</div>
+		<script>
+function submitOrder() {
+            let name = document.getElementById("name").value;
+            let cardNumber = document.getElementById("cardNumber").value;
+            let expiry = document.getElementById("expiry").value;
+            let cvv = document.getElementById("cvv").value;
+			
+			  if (!name || !cardNumber || !expiry || !cvv) {
+                alert("Please enter complete payment details.");
+                return;
+            }
+
+            if (cardNumber.length !== 16 || isNaN(cardNumber)) {
+                alert("Invalid card number. It must be 16 digits.");
+                return;
+            }
+
+            if (!expiry.match(/^\d{2}\/\d{2}$/)) {
+                alert("Invalid expiry format. Use MM/YY.");
+                return;
+            }
+
+            if (cvv.length !== 3 || isNaN(cvv)) {
+                alert("Invalid CVV. It must be 3 digits.");
+                return;
+            }
+
+	</script>
