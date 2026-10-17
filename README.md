@@ -1,4 +1,4 @@
-🍦 Blue Sky Summer - Ice Cream Store Website
+**🍦 Blue Sky Summer - Ice Cream Store Website**
 
 A full-stack ice cream store web application built with HTML, CSS, JavaScript, PHP, and MySQL. It features a dynamic product catalog, customer reviews, contact form, and a complete order/payment flow.
 
@@ -146,10 +146,10 @@ json
 ]
 
 
-👨‍💻 Author
-MIFLA MAKEEN
+**👨‍💻 Author
+MIFLA MAKEEN**
 
-📞 +94 76 615 4455
+**📞 +94 76 615 4455**
 
 🌐 GitHub: @your-username
 
